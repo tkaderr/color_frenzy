@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8BBBF48E949EACCB58E792853687DBA2BAE6071D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5F324E888A8A88807622DFD84DC1172544B7A56C" : 9223372036854775807,
+    "8BBBF48E949EACCB58E792853687DBA2BAE6071D" : 9223372036854775807,
+    "C866C4E0CDB93819B91DEE35C9FA0BAD9716833E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E062E865-3761-405A-8AE0-1AAE6A15A431",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5F324E888A8A88807622DFD84DC1172544B7A56C" : "..\/rental_app",
+    "8BBBF48E949EACCB58E792853687DBA2BAE6071D" : "ios_colorpicker\/",
+    "C866C4E0CDB93819B91DEE35C9FA0BAD9716833E" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "colorpicker",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "colorpicker.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kylebible\/rental_app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5F324E888A8A88807622DFD84DC1172544B7A56C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cjko2\/ios_colorpicker",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8BBBF48E949EACCB58E792853687DBA2BAE6071D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tkaderr\/ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C866C4E0CDB93819B91DEE35C9FA0BAD9716833E"
+    }
+  ]
+}

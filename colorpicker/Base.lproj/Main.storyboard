@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="colorpicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtX-HJ-Bkx" customClass="ColorView" customModule="colorpicker" customModuleProvider="target">
+                                <rect key="frame" x="218.5" y="72.5" width="230" height="230"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLY-M8-OM8">
+                                        <rect key="frame" x="52" y="187" width="126" height="42"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="126" id="RdO-ci-07a"/>
+                                            <constraint firstAttribute="height" constant="42" id="g2q-i8-rpl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Start Game">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kcm-C4-D7T"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="VLY-M8-OM8" firstAttribute="centerX" secondItem="EtX-HJ-Bkx" secondAttribute="centerX" id="RNe-gl-Zpr"/>
+                                    <constraint firstAttribute="width" constant="230" id="Wcz-Pd-Quk"/>
+                                    <constraint firstAttribute="height" constant="230" id="XW0-xL-C9L"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88.8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jND-l9-0oI">
+                                <rect key="frame" x="297.5" y="165.5" width="73.5" height="44.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWd-Dx-QbN">
+                                <rect key="frame" x="20" y="28" width="171" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="fr8-Tz-fYr"/>
+                                    <constraint firstAttribute="height" constant="23" id="gzH-dM-tiJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round: 99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yg7-9c-edg">
+                                <rect key="frame" x="513" y="28" width="134" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LaJ-V7-WTn"/>
+                                    <constraint firstAttribute="width" constant="134" id="Zty-Pm-b2g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tilt your phone to match the color in the center within the time limit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlL-xe-dar">
+                                <rect key="frame" x="122" y="287" width="424" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="424" id="hbU-el-UxS"/>
+                                    <constraint firstAttribute="height" constant="76" id="ppw-3I-IW7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNm-5f-iYY">
+                                <rect key="frame" x="286" y="290.5" width="96.5" height="52"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shake to start a new round!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeC-5j-BHb">
+                                <rect key="frame" x="179" y="295" width="308" height="23"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLOR FRENZY!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x1O-eT-zmO">
+                                <rect key="frame" x="136" y="0.0" width="395" height="65"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSN-0i-IVM">
+                                <rect key="frame" x="468.5" y="154.5" width="135.5" height="65"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tA0-yY-LxV">
+                                <rect key="frame" x="44.5" y="155.5" width="154" height="65"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giL-fV-VNJ">
+                                <rect key="frame" x="6" y="330" width="129" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="3YH-kb-71R"/>
+                                    <constraint firstAttribute="height" constant="43" id="I2x-lS-JCZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <state key="normal" title="Mute Sound">
+                                    <color key="titleColor" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="mute:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MaU-XN-Ww6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iSN-0i-IVM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5f8-UQ-qRh"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="cWd-Dx-QbN" secondAttribute="leading" id="6xg-7b-DKV"/>
+                            <constraint firstItem="UNm-5f-iYY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GXJ-uj-WdI"/>
+                            <constraint firstItem="EtX-HJ-Bkx" firstAttribute="leading" secondItem="tA0-yY-LxV" secondAttribute="trailing" constant="20" id="HuK-vS-SgW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yg7-9c-edg" secondAttribute="trailing" id="Hyw-Jm-jbD"/>
+                            <constraint firstItem="EtX-HJ-Bkx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IY7-4y-pLX"/>
+                            <constraint firstItem="aeC-5j-BHb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IiZ-8e-kN9"/>
+                            <constraint firstItem="giL-fV-VNJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="6" id="MQd-Vm-zhs"/>
+                            <constraint firstItem="x1O-eT-zmO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="Oif-Bw-Yjm"/>
+                            <constraint firstItem="iSN-0i-IVM" firstAttribute="leading" secondItem="EtX-HJ-Bkx" secondAttribute="trailing" constant="20" id="Py9-SY-CsE"/>
+                            <constraint firstItem="jND-l9-0oI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q80-Xb-uhC"/>
+                            <constraint firstItem="VLY-M8-OM8" firstAttribute="top" secondItem="jND-l9-0oI" secondAttribute="bottom" constant="49.5" id="Uc8-FL-uKM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="giL-fV-VNJ" secondAttribute="bottom" constant="2" id="Xsm-ox-DpM"/>
+                            <constraint firstItem="Yg7-9c-edg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Zdb-a4-Ete"/>
+                            <constraint firstItem="UNm-5f-iYY" firstAttribute="top" secondItem="VLY-M8-OM8" secondAttribute="bottom" constant="-11" id="aac-7B-Hbs"/>
+                            <constraint firstItem="x1O-eT-zmO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePH-VM-V1a"/>
+                            <constraint firstItem="jND-l9-0oI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ghO-eZ-rc9"/>
+                            <constraint firstItem="cWd-Dx-QbN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ie4-Ot-WqA"/>
+                            <constraint firstItem="aeC-5j-BHb" firstAttribute="top" secondItem="UNm-5f-iYY" secondAttribute="bottom" constant="-47.5" id="jYF-oT-kaZ"/>
+                            <constraint firstItem="tA0-yY-LxV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="l3u-cr-wl3"/>
+                            <constraint firstItem="NlL-xe-dar" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mtG-w5-pIR"/>
+                            <constraint firstItem="EtX-HJ-Bkx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sAb-gP-bt3"/>
+                            <constraint firstItem="NlL-xe-dar" firstAttribute="top" secondItem="VLY-M8-OM8" secondAttribute="bottom" constant="-14.5" id="vzB-sL-2Lw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="colorView" destination="EtX-HJ-Bkx" id="mjb-V5-D1J"/>
+                        <outlet property="gameLabel" destination="tA0-yY-LxV" id="puH-Li-cJJ"/>
+                        <outlet property="gameTitle" destination="x1O-eT-zmO" id="kP3-aH-hw0"/>
+                        <outlet property="instructionsLabel" destination="NlL-xe-dar" id="SGk-xk-MgI"/>
+                        <outlet property="overLabel" destination="iSN-0i-IVM" id="NnP-tU-HHJ"/>
+                        <outlet property="roundLabel" destination="Yg7-9c-edg" id="sZX-vb-4dx"/>
+                        <outlet property="roundScoreLabel" destination="UNm-5f-iYY" id="ZhI-2k-g6T"/>
+                        <outlet property="scoreLabel" destination="cWd-Dx-QbN" id="XNk-9r-jBh"/>
+                        <outlet property="shakeLabel" destination="aeC-5j-BHb" id="IGQ-F1-LWc"/>
+                        <outlet property="startButton" destination="VLY-M8-OM8" id="XRc-hv-uvy"/>
+                        <outlet property="timerLabel" destination="jND-l9-0oI" id="9cT-5F-OVX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="269" y="62"/>
+        </scene>
+    </scenes>
+</document>
